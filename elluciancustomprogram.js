@@ -14,9 +14,12 @@ $( document ).ready(function() {
 				$('#next').attr('disabled', 'disabled');
 				$('#prev').attr('disabled', 'disabled');
 				$('ul.nav-tabs li input').css("color", "gray").css("text-decoration", "none");
-				$('ul.nav-tabs li input').submit(function (e) {
-					e.preventDefault(e);
-				});
+			//	$('ul.nav-tabs li input').submit(function (e) {
+			//		e.preventDefault(e);
+			//	});
+				$('ul.nav-tabs li input').on('click', function(e) {
+    e.stopImmediatePropagation();
+});
 			}
 			else {
 				$('#save').removeAttr('disabled');
