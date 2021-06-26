@@ -1,5 +1,5 @@
 $( document ).ready(function() {
-    console.log( "This is a custom Java Script code for imperial by Ashish Nanda test1114!" );
+    console.log( "This is a custom Java Script code for imperial by Ashish Nanda test15!" );
     $("#suss_residencypassexpirydate").on("change", function (e) {
 		
 			var selecteddate = $("#suss_residencypassexpirydate").val().split("/");
@@ -19,10 +19,8 @@ $( document ).ready(function() {
 			//	});
 				$('ul.nav-tabs li input').on('click', function(e) {
     e.stopImmediatePropagation();
-			if ($(this).hasClass("disabled")) {
     e.preventDefault();
     return false;
-  }
 });
 			}
 			else {
