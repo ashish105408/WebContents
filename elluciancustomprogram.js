@@ -27,6 +27,9 @@ $( document ).ready(function() {
 				$('#save').removeAttr('disabled');
 				$('#next').removeAttr('disabled');
 				$('#prev').removeAttr('disabled');
+				$('ul.nav-tabs li input').on('click', function(e) {
+    return true;
+});
 			}
 	});
 
