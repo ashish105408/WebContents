@@ -19,6 +19,10 @@ $( document ).ready(function() {
 			//	});
 				$('ul.nav-tabs li input').on('click', function(e) {
     e.stopImmediatePropagation();
+			if ($(this).hasClass("disabled")) {
+    e.preventDefault();
+    return false;
+  }
 });
 			}
 			else {
