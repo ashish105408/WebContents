@@ -28,7 +28,7 @@ $( document ).ready(function() {
 				$('#next').removeAttr('disabled');
 				$('#prev').removeAttr('disabled');
 				$('ul.nav-tabs li input').on('click', function(e) {
-			 $(this).unbind("click")
+			$(this).trigger('click');
     return true;
 });
 			}
